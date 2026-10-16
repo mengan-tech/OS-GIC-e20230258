@@ -1,0 +1,14 @@
+/home/gic-han-mengan/oslab-work/lab1/task2_files
+lemon.txt
+river.txt
+lemon.txt
+lemon_copy.txt
+river.txt
+task2_file_commands.txt
+lemon.txt
+lemon_copy.txt
+river_renamed.txt
+task2_file_commands.txt
+lemon.txt
+river_renamed.txt
+
