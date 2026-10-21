@@ -1,0 +1,1 @@
+strace 6.19+ds-0ubuntu5 is installed. Task 1 creator and reader, and Task 2 directory-listing traces and `strace -c` summaries are saved in this folder.

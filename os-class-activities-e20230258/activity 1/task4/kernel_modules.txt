@@ -1,0 +1,55 @@
+=== lsmod (first 20 lines) ===
+Module                  Size  Used by
+intel_rapl_msr         16384  0
+intel_rapl_common      32768  1 intel_rapl_msr
+kvm_intel             356352  0
+kvm                   966656  1 kvm_intel
+irqbypass              12288  1 kvm
+battery                20480  0
+crc32c_intel           16384  0
+ac                     16384  0
+sch_fq_codel           16384  1
+configfs               53248  1
+autofs4                45056  0
+br_netfilter           28672  0
+bridge                282624  1 br_netfilter
+stp                    12288  1 bridge
+llc                    12288  2 bridge,stp
+ip_tables              28672  0
+tun                    53248  0
+
+=== modinfo kvm_intel ===
+filename:       /lib/modules/6.6.114.1-microsoft-standard-WSL2/kernel/arch/x86/kvm/kvm-intel.ko
+license:        GPL
+author:         Qumranet
+alias:          cpu:type:x86,ven*fam*mod*:feature:*0085*
+depends:        kvm
+retpoline:      Y
+intree:         Y
+name:           kvm_intel
+vermagic:       6.6.114.1-microsoft-standard-WSL2 SMP preempt mod_unload modversions 
+parm:           sgx:bool
+parm:           enable_shadow_vmcs:bool
+parm:           nested_early_check:bool
+parm:           vpid:bool
+parm:           vnmi:bool
+parm:           flexpriority:bool
+parm:           ept:bool
+parm:           unrestricted_guest:bool
+parm:           eptad:bool
+parm:           emulate_invalid_guest_state:bool
+parm:           fasteoi:bool
+parm:           enable_apicv:bool
+parm:           enable_ipiv:bool
+parm:           nested:bool
+parm:           pml:bool
+parm:           error_on_inconsistent_vmcs_config:bool
+parm:           dump_invalid_vmcs:bool
+parm:           preemption_timer:bool
+parm:           allow_smaller_maxphyaddr:bool
+parm:           ple_gap:uint
+parm:           ple_window:uint
+parm:           ple_window_grow:uint
+parm:           ple_window_shrink:uint
+parm:           ple_window_max:uint
+parm:           enlightened_vmcs:bool

@@ -1,0 +1,20 @@
+OS layers observed on this system
+
++--------------------------------------------------------------------+
+| User space                                                         |
+| Shell: bash                                                        |
+| file_creator_lib, file_creator_sys, file_reader_lib,               |
+| file_reader_sys, dir_list_lib, dir_list_sys                         |
++-------------------------------|------------------------------------+
+                                | system call interface
+                                | open(), read(), write(), close()
++-------------------------------v------------------------------------+
+| Linux kernel: 6.6.114.1-microsoft-standard-WSL2                    |
+| Loaded modules: kvm_intel, kvm, irqbypass                           |
++-------------------------------|------------------------------------+
+                                | manages and mediates access to
++-------------------------------v------------------------------------+
+| Hardware visible to this WSL2 system                                |
+| CPU: 13th Gen Intel(R) Core(TM) i7-13620H                           |
+| Memory: 7,979,088 kB (MemTotal, about 7.61 GiB)                    |
++--------------------------------------------------------------------+

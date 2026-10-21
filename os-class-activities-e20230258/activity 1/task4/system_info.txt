@@ -1,0 +1,42 @@
+=== uname -a ===
+Linux MengAn 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 GNU/Linux
+
+=== /proc/cpuinfo (first 20 lines) ===
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 186
+model name	: 13th Gen Intel(R) Core(TM) i7-13620H
+stepping	: 2
+microcode	: 0xffffffff
+cpu MHz		: 2918.398
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 16
+core id		: 0
+cpu cores	: 8
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 28
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize flush_l1d arch_capabilities
+
+=== /proc/meminfo (first 10 lines) ===
+MemTotal:        7979088 kB
+MemFree:         4624016 kB
+MemAvailable:    6290748 kB
+Buffers:          105984 kB
+Cached:          1675360 kB
+SwapCached:            0 kB
+Active:           556148 kB
+Inactive:        2390152 kB
+Active(anon):       3128 kB
+Inactive(anon):  1167784 kB
+
+=== /proc/version ===
+Linux version 6.6.114.1-microsoft-standard-WSL2 (root@507f3e43091d) (gcc (GCC) 13.2.0, GNU ld (GNU Binutils) 2.41) #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025
+
+=== /proc/uptime ===
+1426.99 22205.17

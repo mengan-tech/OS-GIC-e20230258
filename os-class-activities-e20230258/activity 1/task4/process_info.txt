@@ -1,0 +1,63 @@
+=== /proc/self/status (first 20 lines) ===
+Name:	cat
+Umask:	0022
+State:	R (running)
+Tgid:	16481
+Ngid:	0
+Pid:	16481
+PPid:	16475
+TracerPid:	0
+Uid:	0	0	0	0
+Gid:	0	0	0	0
+FDSize:	64
+Groups:	0 
+NStgid:	16481
+NSpid:	16481
+NSpgid:	16475
+NSsid:	16475
+Kthread:	0
+VmPeak:	   16236 kB
+VmSize:	   16236 kB
+VmLck:	       0 kB
+
+=== /proc/self/maps (first 20 lines) ===
+582369f01000-582369ff3000 r--p 00000000 08:30 1548                       /usr/lib/cargo/bin/coreutils/cat
+582369ff3000-58236a4ab000 r-xp 000f2000 08:30 1548                       /usr/lib/cargo/bin/coreutils/cat
+58236a4ab000-58236a86a000 r--p 005aa000 08:30 1548                       /usr/lib/cargo/bin/coreutils/cat
+58236a86a000-58236a9cf000 r--p 00968000 08:30 1548                       /usr/lib/cargo/bin/coreutils/cat
+58236a9cf000-58236a9d5000 rw-p 00acd000 08:30 1548                       /usr/lib/cargo/bin/coreutils/cat
+58236a9d5000-58236a9d6000 rw-p 00000000 00:00 0 
+5823983b1000-5823983f3000 rw-p 00000000 00:00 0                          [heap]
+70328f600000-70328f628000 r--p 00000000 08:30 13595                      /usr/lib/x86_64-linux-gnu/libc.so.6
+70328f628000-70328f7c0000 r-xp 00028000 08:30 13595                      /usr/lib/x86_64-linux-gnu/libc.so.6
+70328f7c0000-70328f80e000 r--p 001c0000 08:30 13595                      /usr/lib/x86_64-linux-gnu/libc.so.6
+70328f80e000-70328f812000 r--p 0020e000 08:30 13595                      /usr/lib/x86_64-linux-gnu/libc.so.6
+70328f812000-70328f814000 rw-p 00212000 08:30 13595                      /usr/lib/x86_64-linux-gnu/libc.so.6
+70328f814000-70328f821000 rw-p 00000000 00:00 0 
+70328f92f000-70328f934000 rw-p 00000000 00:00 0 
+70328f934000-70328f937000 r--p 00000000 08:30 14410                      /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+70328f937000-70328f9b3000 r-xp 00003000 08:30 14410                      /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+70328f9b3000-70328f9de000 r--p 0007f000 08:30 14410                      /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+70328f9de000-70328f9df000 r--p 000a9000 08:30 14410                      /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+70328f9df000-70328f9e0000 rw-p 000aa000 08:30 14410                      /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+70328f9e0000-70328f9f2000 r--p 00000000 08:30 13598                      /usr/lib/x86_64-linux-gnu/libm.so.6
+
+=== /proc/self/cmdline ===
+cat /proc/self/cmdline 
+
+=== ps aux (first 15 lines) ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  24116 15128 ?        Ss   11:27   0:00 /sbin/init
+root           2  0.0  0.0   3172  2200 hvc0     Sl+  11:27   0:00 /init
+root           6  0.0  0.0   3188  2128 hvc0     Sl+  11:27   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          47  0.0  0.2  50380 16660 ?        S<s  11:27   0:00 /usr/lib/systemd/systemd-journald
+systemd+      84  0.0  0.1  22412 14128 ?        Ss   11:27   0:00 /usr/lib/systemd/systemd-resolved
+root          91  0.2  0.1  35256 12032 ?        Ss   11:27   0:03 /usr/lib/systemd/systemd-udevd
+root         159  0.0  0.0   2880  1980 ?        Ss   11:27   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         163  0.0  0.0   4464  3116 ?        Ss   11:27   0:00 /usr/sbin/cron -f -P
+message+     164  0.0  0.0   8808  5312 ?        Ss   11:27   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         168  0.0  0.3  44096 29508 ?        Ss   11:27   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         172  0.0  0.1  18420  9316 ?        Ss   11:27   0:00 /usr/lib/systemd/systemd-logind
+syslog       189  0.0  0.0 220532  5800 ?        Ssl  11:27   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         198  0.0  0.0   5484  2756 tty1     Ss+  11:27   0:00 /usr/sbin/agetty --noreset --noclear --issue-file=/etc/issue:/etc/issue.d:/run/issue.d:/usr/lib/issue.d - linux
+_chrony      243  0.0  0.0  20408  6220 ?        S    11:27   0:00 /usr/sbin/chronyd -n -F 1 -x
