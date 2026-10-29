@@ -1,0 +1,6 @@
+command: cp reports/*.txt "TechCorp/$third"
+
+The command fail if i put quotes around *.txt becasue quotes stop the shell from expanding the
+*.
+
+The command doesn't copy it. The * wildcard skips files whose names start with (.)

@@ -1,0 +1,4 @@
+Error: cat: 'reports/budget 2026.txt': No such file or directory
+Fix: "../../reports/$file1"
+
+mv -- "$OSLAB_WORKSPACE/lab2/incoming/$file2" "$OSLAB_WORKSPACE/lab2/reports/" 

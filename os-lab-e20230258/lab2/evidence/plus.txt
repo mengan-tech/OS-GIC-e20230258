@@ -1,0 +1,3 @@
+first command: mv '../a/b/lost file.txt' found.txt
+second command: cp found.txt "../../TechCorp/$third"
+Count: 2
