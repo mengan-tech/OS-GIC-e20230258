@@ -1,0 +1,10 @@
+total 32
+drwxr-xr-x 2 mrran mrran  4096 Nov  9 15:21 .
+drwxr-xr-x 7 mrran mrran  4096 Nov  9 14:52 ..
+-rwxr-xr-x 1 mrran mrran 16392 Nov  9 15:21 forkchild
+-rw-r--r-- 1 mrran mrran  1716 Nov  9 15:19 forkchild.c
+-rw-r--r-- 1 mrran mrran     0 Nov  9 15:21 result_forkchild.txt
+Parent process (PID: 20087) — creating child...
+Parent: waiting for child (PID: 20088) to finish...
+Parent: child exited with status 0
+Parent: done.

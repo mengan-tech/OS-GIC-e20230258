@@ -1,0 +1,20 @@
+  464  ./forkchild > result_forkchild.txt 2>&1
+  465  cat .txt
+  466  cat *.txt
+  467  ./forkchild
+  468  cd task2
+  469  gcc -o winprocess winprocess.c
+  470  code winprocess.c
+  471  cd task3_shm
+  472  gcc -o shm-producer.c -lrt
+  473  ./shm-producer
+  474  ./shm-consumer > result-shm-ipc.txt
+  475  cat result-shm-ipc.txt
+  476  history | tail -n 20 > command_used_shm.txt
+  477  cd task4_mq
+  478  ./sender
+  479  ./receiver > result-mq-ipc.txt
+  480  cat result-mq-ipc.txt
+  481  history | tail -n 20 > command_used_mq.txt
+  482  cd task1
+  483  history | tail -n 20 > command_used_forkchild.txt
