@@ -1,0 +1,28 @@
+
+=== BEFORE RENAME ===
+19142816 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan 12 Nov 12 14:19 tiger-hard.txt
+19142863 lrwxrwxrwx 1 gic-han-mengan gic-han-mengan  9 Nov 12 15:19 tiger-soft.txt -> tiger.txt
+19142816 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan 12 Nov 12 14:19 tiger.txt
+hard: version 843
+soft: version 843
+stored target: tiger.txt
+
+=== AFTER RENAME, BEFORE REPAIR ===
+19142816 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan 12 Nov 12 14:19 tiger-backup.txt
+19142816 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan 12 Nov 12 14:19 tiger-hard.txt
+19142863 lrwxrwxrwx 1 gic-han-mengan gic-han-mengan  9 Nov 12 15:19 tiger-soft.txt -> tiger.txt
+hard: version 843
+stored target: tiger.txt
+soft: cat: tiger-soft.txt: No such file or directory
+
+=== AFTER REPAIR ===
+19142816 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan 12 Nov 12 14:19 tiger-backup.txt
+19142816 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan 12 Nov 12 14:19 tiger-hard.txt
+19142885 lrwxrwxrwx 1 gic-han-mengan gic-han-mengan 16 Nov 12 16:04 tiger-soft.txt -> tiger-backup.txt
+stored target: tiger-backup.txt
+hard: version 843
+soft: version 843
+Decision: i stored tiger-backup.txt. it reads that from the current folder i live.
+          when i move the whole folder, the link and the report move together.
+          For an absolute target stores the full path from / root. when move folder
+          the link move to the new place, but it still stores the old path.

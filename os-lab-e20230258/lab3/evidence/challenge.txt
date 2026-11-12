@@ -1,0 +1,5 @@
+1. what link count do the remaining names show after each rm?
+- 2. two.txt and three.txt
+2. after you delete one.txt, is the data gone? when would it be gone?
+- after deleting the one.txt, the data is not gone cause the two.txt and three.txt
+  point to the inode of the one.txt. 

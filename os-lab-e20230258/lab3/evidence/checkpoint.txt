@@ -1,0 +1,12 @@
+.:
+total 8
+19142992 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan   25 Nov 12 17:10 forest-backup.txt
+19142991 drwxrwxr-x 2 gic-han-mengan gic-han-mengan 4096 Nov 12 17:11 links
+
+links:
+total 4
+19142993 lrwxrwxrwx 1 gic-han-mengan gic-han-mengan 20 Nov 12 17:11 first.txt -> ../forest-backup.txt
+19142992 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan 25 Nov 12 17:10 hard.txt
+19142994 lrwxrwxrwx 1 gic-han-mengan gic-han-mengan  9 Nov 12 17:10 second.txt -> first.txt
+checkpoint pencil forest
+checkpoint pencil forest

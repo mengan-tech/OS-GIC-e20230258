@@ -1,0 +1,9 @@
+
+=== NEW FILE USING THE OLD NAME ===
+19142816 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan 12 Nov 12 14:19 tiger-backup.txt
+19142816 -rw-rw-r-- 2 gic-han-mengan gic-han-mengan 12 Nov 12 14:19 tiger-hard.txt
+19142863 lrwxrwxrwx 1 gic-han-mengan gic-han-mengan  9 Nov 12 15:19 tiger-soft.txt -> tiger.txt
+19142865 -rw-rw-r-- 1 gic-han-mengan gic-han-mengan 12 Nov 12 15:36 tiger.txt
+tiger.txt: version 892
+hard: version 843
+soft: version 892
