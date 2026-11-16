@@ -1,0 +1,20 @@
+    1  gcc -o threads threads.c -pthread
+    2  ./threads > result_threads.txt 2>&1
+    3  cat result_threads.txt
+    4  echo "--- run it several more times (Actual counter only) ---" >> result_threads.txt
+    5  for i in 1 2 3 4 5; do ./threads | grep "Actual" >> result_threads.txt; done
+    6  gcc -o threads_mutex threads_mutex.c -pthread
+    7  ./threads_mutex > result_threads_mutex.txt 2>&1
+    8  cat result_threads_mutex.txt
+    9  history | tail -n 20 > command_used_threads.txt
+--- Task 4 Part A (threads_observe) ---
+    1  gcc -o threads_observe threads_observe.c -pthread
+    2  ./threads_observe > "$O/observe_stdout.txt" 2>&1 &
+    3  PID=$!
+    4  sleep 0.5
+    5  ps -eLf | grep "[t]hreads_observe" > result_observe_linux.txt
+    6  ps -T -p $PID >> result_observe_linux.txt
+    7  echo "--- /proc/$PID/task/ listing ---" >> result_observe_linux.txt
+    8  /bin/ls /proc/$PID/task/ >> result_observe_linux.txt
+    9  /bin/ls /proc/$PID/task/ | wc -l
+   10  { ps -L -o pid,lwp,nlwp,psr,stat,comm -p $PID; ps --ppid 2 -o pid,ppid,psr,comm | head -15; } >> result_observe_linux.txt

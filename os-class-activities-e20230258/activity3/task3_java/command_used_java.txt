@@ -1,0 +1,9 @@
+    1  javac ThreadDemo.java
+    2  java '-Dstdout.encoding=UTF-8' ThreadDemo > result_thread_demo.txt 2>&1
+    3  cat result_thread_demo.txt
+    4  javac RunnableDemo.java
+    5  java '-Dstdout.encoding=UTF-8' RunnableDemo > result_runnable_demo.txt 2>&1
+    6  cat result_runnable_demo.txt
+    7  javac PoolDemo.java
+    8  java '-Dstdout.encoding=UTF-8' PoolDemo > result_pool_demo.txt 2>&1
+    9  cat result_pool_demo.txt

@@ -1,0 +1,8 @@
+    1  gcc -o server server.c
+    2  gcc -o client client.c
+    3  ./server > result_server.txt 2>&1 &
+    4  sleep 1
+    5  ./client > result_client.txt 2>&1
+    6  wait
+    7  cat result_server.txt result_client.txt > result_socket.txt
+    8  history | tail -n 20 > command_used_socket.txt

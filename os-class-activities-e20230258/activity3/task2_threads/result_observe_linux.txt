@@ -1,0 +1,32 @@
+mrran       9880    9866    9880  0    5 21:38 pts/7    00:00:00 ./threads_observe
+mrran       9880    9866    9882  0    5 21:38 pts/7    00:00:00 ./threads_observe
+mrran       9880    9866    9883  0    5 21:38 pts/7    00:00:00 ./threads_observe
+mrran       9880    9866    9884  0    5 21:38 pts/7    00:00:00 ./threads_observe
+mrran       9880    9866    9885  0    5 21:38 pts/7    00:00:00 ./threads_observe
+    PID    SPID TTY          TIME CMD
+   9880    9880 pts/7    00:00:00 threads_observe
+   9880    9882 pts/7    00:00:00 threads_observe
+   9880    9883 pts/7    00:00:00 threads_observe
+   9880    9884 pts/7    00:00:00 threads_observe
+   9880    9885 pts/7    00:00:00 threads_observe
+--- /proc/9880/task/ listing ---
+9880
+9882
+9883
+9884
+9885
+    PID     LWP NLWP PSR STAT COMMAND
+   9880    9880    5   4 Sl+  threads_observe
+   9880    9882    5  10 Sl+  threads_observe
+   9880    9883    5  12 Sl+  threads_observe
+   9880    9884    5   9 Sl+  threads_observe
+   9880    9885    5   0 Sl+  threads_observe
+    PID    PPID PSR COMMAND
+      6       2  13 init
+    341       2  15 SessionLeader
+    344       2   6 login
+    851       2   2 SessionLeader
+   2074       2  15 SessionLeader
+   2099       2   3 SessionLeader
+   2108       2   4 SessionLeader
+   9864       2   6 SessionLeader
